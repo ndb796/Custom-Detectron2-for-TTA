@@ -32,7 +32,14 @@ dataset.export(
 
 ### Mutiple Augmentations for TTA
 
+* [My usage example (with Korean comments)](/source_codes/Detectron2_Custom_Test_Time_Augmentation_(TTA).ipynb)
 * This implementation simply utilizes [RandomBrightness](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L516), [RandomContrast](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L490), [RandomFlip](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L76), [RandomSaturation](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L542), [RandomRotation](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L231), [ResizeShortestEdge](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L128) at the same time.
+    * <b>RandomBrightness</b>: 3 transformations.
+    * <b>RandomContrast</b>: 3 transformations.
+    * <b>RandomFlip</b>: 2 transformations.
+    * <b>RandomSaturation</b>: 3 transformations.
+    * <b>RandomRotation</b>: 3 transformations.
+    * <b>ResizeShortestEdge</b>: 9 transformations.
 * Used codes are based on the Detectron2 [transforms](https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/transforms/augmentation_impl.py).
 
 <pre>
