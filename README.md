@@ -32,7 +32,7 @@ dataset.export(
 
 ### Mutiple Augmentations for TTA
 
-* This implementation provides RandomBrightness, RandomContrast, RandomFlip, RandomSaturation, RandomRotation, ResizeShortestEdge at the same time.
+* This implementation simply utilizes [RandomBrightness](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L516), [RandomContrast](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L490), [RandomFlip](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L76), [RandomSaturation](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L542), [RandomRotation](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L231), [ResizeShortestEdge](https://github.com/facebookresearch/detectron2/blob/9eb0027d795bb9a38098bb05e2ceb273bfc9cf41/detectron2/data/transforms/augmentation_impl.py#L128) at the same time.
 * Used codes are based on the Detectron2 [transforms](https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/transforms/augmentation_impl.py).
 
 <pre>
