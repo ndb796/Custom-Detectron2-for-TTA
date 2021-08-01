@@ -7,6 +7,7 @@
 ### How to curate the COCO Validation 2017 using [FiftyOne](https://voxel51.com/docs/fiftyone/integrations/coco.html)
 
 * References: [FiftyOne Dataset Zoo](https://voxel51.com/docs/fiftyone/user_guide/dataset_zoo/index.html), [FiftyOne Dataset Object](https://voxel51.com/docs/fiftyone/api/fiftyone.core.dataset.html)
+* The following source code downloads 1,000 images of the COCO validation dataset.
 
 <pre>
 
@@ -27,13 +28,12 @@ dataset.export(
     label_field="ground_truth",
     labels_path="./annotations/instances.json",
 )
-
 </pre>
 
 ### Mutiple Augmentations for TTA
 
 * This implementation provides RandomBrightness, RandomContrast, RandomFlip, RandomSaturation, RandomRotation, ResizeShortestEdge at the same time.
-* Used codes is based on the Detectron2 [transforms](https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/transforms/augmentation_impl.py).
+* Used codes are based on the Detectron2 [transforms](https://github.com/facebookresearch/detectron2/blob/master/detectron2/data/transforms/augmentation_impl.py).
 
 <pre>
 
